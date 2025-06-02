@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const connectDB= async()=>{
     try{
         
-        const connection = await mongoose.connect('mongodb+srv://nodeapi:eI8J8Lpvyp6nHUvj@nodeapi-cluster.v24i5mp.mongodb.net/bookstore-api')
+        const connection = await mongoose.connect('your mongoDB url')
         console.log(`MongoDB connected to ${connection.connection.host}`);
         
     }catch(error){
